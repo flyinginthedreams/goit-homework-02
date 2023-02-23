@@ -6,12 +6,13 @@
   --item-text-colour: #434455;
   --footer-text-colour: #e7e9fc;
   --accent-colour: #404bbf;
-  --first-font: "Roboto", sans-serif;
   --header-colour: #e7e9fc;
   --hero-colour: #2e2f42;
   --team-colour: #f4f4fd;
   --footer-colour: #2e2f42;
   --team-background: #ffffff;
+
+  --first-font: "Roboto", sans-serif;
 
   /* Portfolio var */
   --porfolio-background-colour: #ffffff;
@@ -23,12 +24,15 @@
 
 .body {
   font-family: var(--first-font);
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  line-height: 1.5;
 }
 .list {
   list-style: none;
 }
 
-.lin {
+.link {
   text-decoration: none;
 }
 
@@ -36,17 +40,19 @@
   visibility: hidden;
   pointer-events: none;
   position: absolute;
+  width: 1px;
+  height: 1px;
+  left: -1px;
 }
 
 /* Header section */
 .header {
-  background: var(--header-colour);
 }
 .logo-colour {
   color: var(--logo-colour);
 }
-.header-item:hover,
-.header-item:focus {
+.link:hover,
+.link:focus {
   color: #404bbf;
 }
 
@@ -65,33 +71,20 @@
   color: var(--secondary-title-color);
 }
 
-.header-list {
-  font-weight: 500;
+.header-item {
   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: var(--secondary-title-color);
 }
 
-.header-item {
+.header-list {
 }
 .contacts-info {
 }
-.header-mail {
+.header-contacts {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: var(--item-text-colour);
-}
-.header-phone {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--item-text-colour);
-  font-style: normal;
 }
 
 /* /Header section */
@@ -107,16 +100,13 @@
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
-  letter-spacing: 0.02em;
   color: var(--main-title-color);
   width: 496px;
-  height: 120px;
 }
 .hero-btn {
   font-style: normal;
-  font-weight: 500;
+  font-family: inherit;
   font-size: 16px;
-  line-height: 1.5;
   display: flex;
   align-items: center;
   letter-spacing: 0.04em;
@@ -124,6 +114,11 @@
   background: #4d5ae5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  color: var(--porfolio-background-colour);
+  background: var(--accent-colour);
 }
 
 /* /Hero section */
@@ -140,18 +135,14 @@
 }
 .qualities-name {
   font-style: normal;
-  font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
   color: var(--secondary-title-color);
 }
 .qualities-text {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: var(--item-text-colour);
 }
 /* /Advantages sections */
@@ -164,7 +155,6 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--secondary-title-color);
 }
@@ -184,7 +174,6 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--secondary-title-color);
 }
@@ -197,18 +186,14 @@
 }
 .team-name {
   font-style: normal;
-  font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
   color: var(--secondary-title-color);
 }
 .team-text {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: var(--item-text-colour);
 }
 
@@ -236,7 +221,6 @@
   font-weight: 400;
   font-size: 1.5;
   line-height: 24px;
-  letter-spacing: 0.02em;
   color: var(--footer-text-colour);
 }
 
@@ -260,23 +244,13 @@
   justify-content: center;
   align-items: center;
   padding: 12px 24px;
-  width: 126px;
-  height: 48px;
   background: var(--porfolio-button-background);
-  border: 1px solid var(--portfolio-header-colour);
+  border: 1px solid var(--footer-text-colour);
   border-radius: 4px;
-  flex: none;
-  order: 4;
-  flex-grow: 0;
-
-  font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.04em;
   color: var(--portfolio-button-text-colour);
+  font-family: inherit;
 }
 .preview {
 }
@@ -285,18 +259,14 @@
 .preview-item {
 }
 .preview-name {
-  font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
   color: var(--portfolio-header-colour);
 }
 
 .preview-test {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: var(--porfolio-text-colour);
 }
 
