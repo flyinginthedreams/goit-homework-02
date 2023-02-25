@@ -25,8 +25,9 @@
 .body {
   font-family: var(--first-font);
   letter-spacing: 0.02em;
-  font-weight: 500;
   line-height: 1.5;
+  font-size: 16px;
+  font-weight: 400;
 }
 .list {
   list-style: none;
@@ -47,6 +48,11 @@
 
 /* Header section */
 .header {
+}
+
+.link-style {
+  color: var(--secondary-title-color);
+  font-weight: 500;
 }
 .logo-colour {
   color: var(--logo-colour);
@@ -69,11 +75,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-title-color);
+  text-decoration: none;
 }
 
 .header-item {
-  font-size: 16px;
-  color: var(--secondary-title-color);
 }
 
 .header-list {
@@ -82,8 +87,6 @@
 }
 .header-contacts {
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
   color: var(--item-text-colour);
 }
 
@@ -114,6 +117,8 @@
   background: #4d5ae5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  font-weight: 500;
+  line-height: 1.5;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -134,15 +139,13 @@
 .qualities-items-list {
 }
 .qualities-name {
+  font-weight: 500;
   font-style: normal;
   font-size: 20px;
   line-height: 1.2;
   color: var(--secondary-title-color);
 }
 .qualities-text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
   color: var(--item-text-colour);
 }
 /* /Advantages sections */
@@ -185,15 +188,13 @@
   background: var(--team-background);
 }
 .team-name {
+  font-weight: 500;
   font-style: normal;
   font-size: 20px;
   line-height: 1.2;
   color: var(--secondary-title-color);
 }
 .team-text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
   color: var(--item-text-colour);
 }
 
@@ -214,13 +215,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-footer-colour);
+  text-decoration: none;
 }
 
 .footer-text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.5;
-  line-height: 24px;
   color: var(--footer-text-colour);
 }
 
@@ -251,6 +249,8 @@
   letter-spacing: 0.04em;
   color: var(--portfolio-button-text-colour);
   font-family: inherit;
+  line-height: 1.5;
+  cursor: pointer;
 }
 .preview {
 }
@@ -259,14 +259,13 @@
 .preview-item {
 }
 .preview-name {
+  font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   color: var(--portfolio-header-colour);
 }
 
 .preview-test {
-  font-weight: 400;
-  font-size: 16px;
   color: var(--porfolio-text-colour);
 }
 
